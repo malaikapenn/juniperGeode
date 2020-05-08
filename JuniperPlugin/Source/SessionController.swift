@@ -78,7 +78,7 @@ import ExternalAccessory
             }
             _readData?.append(buffer, length: bytesRead!)
             _dataAsString = NSString(bytes: buffer, length: bytesRead!, encoding: String.Encoding.utf8.rawValue) as String?
-            UnitySendMessage("Button", "ReceiveMessage", _dataAsString ?? "");
+            UnitySendMessage("[GPS Manager]", "ReceiveMessage", _dataAsString ?? "");
         }
     }
     
